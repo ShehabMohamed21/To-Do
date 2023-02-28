@@ -1,0 +1,21 @@
+<app-header></app-header>
+<br />
+<app-to-do-list *ngIf="!isAddTask"></app-to-do-list>
+<button
+  class="btn btn-success"
+  (click)="onLoadData()"
+  style="margin-right: 5px"
+>
+  load data
+</button>
+<button class="btn btn-success" (click)="onSaveData()">save data</button>
+
+<div style="float: right">
+  <button
+    type="button"
+    class="btn btn-success btn-circle btn-xl"
+    (click)="onAdd()"
+  >
+    <i class="fa fa-plus"></i>
+  </button>
+</div>

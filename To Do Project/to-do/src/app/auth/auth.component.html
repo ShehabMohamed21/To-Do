@@ -1,0 +1,20 @@
+<body>
+  <div class="card">
+    <div class="card-content">
+      <div>
+        <div class="welcome">Welcome to To-Do</div>
+        <div>
+          <p class="bio">this is your best way to handle your tasks</p>
+        </div>
+        <div>
+          <div *ngIf="start">
+            <button type="button" (click)="onBegin()" class="btn btn-primary">
+              Begin
+            </button>
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

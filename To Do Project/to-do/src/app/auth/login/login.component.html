@@ -1,0 +1,42 @@
+<div class="row">
+  <h6>Back to <a routerLink="/signup">SignUp?</a></h6>
+  <div class="row justify-content-md-center">
+    <div class="col col-2">
+      <h4>Login</h4>
+    </div>
+  </div>
+</div>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+  <div>
+    <label for="email"><b>E-mail</b></label>
+    <br />
+    <input
+      class="text-input-style"
+      type="text"
+      placeholder="example@mail.com"
+      name="email"
+      ngModel
+      name="email"
+      required
+      email
+    />
+  </div>
+  <br />
+  <div>
+    <label for="password"><b>Password</b></label>
+    <br />
+    <input
+      class="text-input-style"
+      type="password"
+      placeholder="6+ strong character"
+      name="password"
+      ngModel
+      required
+      minlength="6"
+    />
+  </div>
+  <br />
+  <div class="row create-btn-style">
+    <button class="btn btn-primary" type="submit">Login</button>
+  </div>
+</form>

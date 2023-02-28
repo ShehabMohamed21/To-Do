@@ -1,0 +1,28 @@
+<div *ngFor="let task of tasks; let i = index">
+  <div class="container">
+    <div class="row">
+      <div class="col col-8">
+        <textarea class="card">{{ task }} </textarea>
+      </div>
+      <div class="col col-2">
+        <button
+          style="float: right; margin-top: 15px"
+          class="btn btn-success"
+          (click)="onDoneTask(i)"
+        >
+          Done
+        </button>
+      </div>
+      <div class="col col-2">
+        <button
+          style="float: right; margin-top: 15px"
+          class="btn btn-primary"
+          (click)="onEditTask(i)"
+        >
+          edit
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- [attr.index]="i" -->

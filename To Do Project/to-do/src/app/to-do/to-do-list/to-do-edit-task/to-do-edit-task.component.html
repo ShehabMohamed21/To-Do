@@ -1,0 +1,30 @@
+<app-header></app-header>
+<br />
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="onEdit()">
+    <div>
+      <textarea
+        name="task"
+        id="task"
+        class="task-card"
+        [(ngModel)]="taskToEdit"
+        required
+        #name="ngModel"
+        >{{ taskToEdit }}</textarea
+      >
+      <div *ngIf="name.dirty || name.touched">
+        <button
+          class="btn btn-danger"
+          style="float: right; margin-left: 5px"
+          type="button"
+          (click)="onCancel()"
+        >
+          cancel
+        </button>
+        <button class="btn btn-success" style="float: right" type="submit">
+          edit task
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

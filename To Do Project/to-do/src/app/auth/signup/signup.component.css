@@ -1,0 +1,13 @@
+.text-input-style{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 100%;
+}
+
+.create-btn-style{
+    width: 40%;
+    position: relative;
+    left: 30%;
+}

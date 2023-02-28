@@ -1,0 +1,25 @@
+.task-card{
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+}
+
+.add-task{
+    float: right;
+    padding-left: 5px;
+    margin-left: 5px;
+}
+
+.header{
+    padding: 1%;
+    text-align: left;
+    background: -webkit-linear-gradient(bottom, #2dbd6e, #a6f77b);
+    color: white;
+    font-size: 30px;
+}

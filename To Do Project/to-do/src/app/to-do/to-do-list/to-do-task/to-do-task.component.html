@@ -1,0 +1,30 @@
+<app-header></app-header>
+<br />
+<div class="container">
+  <form #form="ngForm" (ngSubmit)="onAdd(name.control.value)">
+    <div>
+      <textarea
+        name="task"
+        id="task"
+        class="task-card"
+        placeholder="What are you going to do today?"
+        ngModel
+        required
+        #name="ngModel"
+      ></textarea>
+      <div *ngIf="name.dirty || name.touched">
+        <button
+          class="btn btn-danger"
+          style="float: right; margin-left: 5px"
+          type="button"
+          (click)="onCancel()"
+        >
+          cancel
+        </button>
+        <button class="btn btn-success" style="float: right" type="submit">
+          add task
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
